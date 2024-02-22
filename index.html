@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Web</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- box icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+      <li class="nav-item dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="light">
+              <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi bi-sun-fill"></i>
+              Light
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="dark">
+              <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi bi-moon-fill"></i>
+              Dark
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="auto">
+              <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi bi-circle-half"></i>
+              Auto
+            </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="header-btn">
+      <a href="signup.html" class="sign-up">Sign Up</a>
+      <a href="login.html" class="sign-in">Sign in</a>
+      <a href="profil.html" class="profile-link"><i class="bi bi-person-circle"></i></a>
+    </div>
+  </header>
+  <!--Home-->
+  <section class="home" id="home">
+    <div class="text">
+      <h1><span>Menyewa </span> Mobil <br> dan Motor</h1>
+      <h1><span>Tepatnya </span> di <br> Anugerah Aja</h1>
+      <p>Ingin sewa, tetapi harga hemat dompet <br> solusinya sewa aja di Anugerah Rental Kemiri.</p>
+    </div>
+
+    <div class="form-container">
+      <form action="">
+        <div class="input-box">
+          <span>Lokasi</span>
+          <input type="search" name="" id="" placeholder="Cari tempat">
+        </div>
+        <div class="input-box">
+          <span>Penjemputan</span>
+          <input type="date" name="" id="">
+        </div>
+        <div class="input-box">
+          <span>Pengembalian</span>
+          <input type="date" name="" id="">
+        </div>
+        <input type="submit" name="" id="" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="works" id="works">
+    <div class="heading">
+      <span>Cara Kerjanya</span>
+      <h1>Sewa dengan 3 langkah mudah</h1>
+    </div>
+    <div class="ride-conteiner">
+      <div class="box">
+        <i class='bx bxs-map'></i>
+        <h2>Pilih Lokasi</h2>
+        <p>Menyediakan pengantaran unit sewa mobil dan motor secara singkat ke lokasi yang Anda tentukan,
+          kami hadir untuk memberikan solusi yang efisien dan nyaman bagi Anda</p>
+      </div>
+
+      <div class="box">
+        <i class='bx bxs-calendar-check'></i>
+        <h2>Tanggal Penjemputan</h2>
+        <p>Tanggal yang ditentukan untuk mengambil atau menjemput, unit sewa mobil atau motor yang telah Anda pesan.
+          Ini merupakan proses penyewaan kendaraan</p>
+      </div>
+
+      <div class="box">
+        <i class='bx bxs-calendar-star'></i>
+        <h2>Pesan Mobil / Motor</h2>
+        <p>Layanan yang kami sediakan untuk memudahkan Anda dalam memesan unit sewa mobil atau motor sesuai kebutuhan.
+          Anda dapat memilih kendaraan yang diinginkan</p>
+      </div>
+    </div>
+
+
+    <!-- Services -->
+    <section class="services" id="services"></section>
+    <div class="heading">
+      <span>Best Services</span>
+      <h1>Jelajahi Penawaran Terbaik<br> Rental Peringkat Teratas</h1>
+    </div>
+    <div class="services-container">
+      <div class="box">
+        <div class="box-img">
+          <img src="img/beat1.jpg" alt="">
+        </div>
+        <p>2024</p>
+        <h3>Honda Beat</h3>
+        <h2>Rp60.000 | Rp1.740.000 <span>/month</span></h2>
+        <a href="keranjang_motor.html" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/scoppy2.jpg" alt="">
+        </div>
+        <p>2023</p>
+        <h3>Honda Scoopy</h3>
+        <h2>Rp65.000 | Rp1.885.000 <span>/month</span></h2>
+        <a href="keranjang_motor.html" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/vario3.jpg" alt="">
+        </div>
+        <p>2023</p>
+        <h3>Honda Vario 150</h3>
+        <h2>Rp70.000 | Rp2.030.000 <span>/month</span></h2>
+        <a href="keranjang_motor.html" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/aerox4.jpg" alt="">
+        </div>
+        <p>2023</p>
+        <h3>Yamaha Aerox ABS</h3>
+        <h2>Rp100.000 | Rp2.900.000 <span>/month</span></h2>
+        <a href="#" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/r155.jpg" alt="">
+        </div>
+        <p>2024</p>
+        <h3>Yamaha R15</h3>
+        <h2>Rp135.000 | Rp3.915.000 <span>/month</span></h2>
+        <a href="#" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/fortuner.jpg" alt="">
+        </div>
+        <p>2023</p>
+        <h3>Toyota Fortuner</h3>
+        <h2>Rp1.200.000 | Rp34.800.000 <span>/month</span></h2>
+        <a href="keranjang_mobil.html" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/innova.jpg" alt="">
+        </div>
+        <p>2022</p>
+        <h3>Toyota Innova</h3>
+        <h2>Rp850.000 | Rp24.650.000 <span>/month</span></h2>
+        <a href="keranjang_mobil.html" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/mazda.jpg" alt="">
+        </div>
+        <p>2023</p>
+        <h3>Toyota Mazda</h3>
+        <h2>Rp300.000 | Rp8.700.000 <span>/month</span></h2>
+        <a href="keranjang_mobil.html" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/brio.jpg" alt="">
+        </div>
+        <p>2019</p>
+        <h3>Honda Brio</h3>
+        <h2>Rp250.000 | Rp7.250.000 <span>/month</span></h2>
+        <a href="#" class="btn">Sewa sekarang</a>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="img/jazz.jpg" alt="">
+        </div>
+        <p>2021</p>
+        <h3>Honda Jazz Fit</h3>
+        <h2>Rp350.000 | Rp10.150.000 <span>/month</span></h2>
+        <a href="#" class="btn">Sewa sekarang</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="heading">
+      <span>About Us</span>
+      <h1>Pengalaman Pelanggan Terbaik</h1>
+    </div>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="img/fortu.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <span>Tentang kami</span>
+        <p>Kami adalah tim yang berdedikasi untuk memberikan pengalaman pelanggan terbaik dalam industri layanan
+          transportasi.Dengan fokus pada kepuasan pelanggan, kami berkomitmen untuk menyediakan layanan yang handal,
+          efisien, dan sesuai dengan kebutuhan individu</p>
+        <p>Dengan berbagai pilihan kendaraan dan solusi transportasi yang fleksibel, kami bertujuan
+          untuk menjadikan perjalanan Anda yang menyenangkan dan bebas repot</p>
+        <a href="pelajari_lanjut.html" class="btn">Pelajari lanjut</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Review -->
+  <section class="reviews" id="reviews">
+    <div class="heading">
+      <span>Reviews</span>
+      <h1>Apa kata pelanggan kami</h1>
+    </div>
+    <div class="reviews-container">
+      <div class="box">
+        <div class="rev-img">
+          <img src="img/rev1.jpg" alt="">
+        </div>
+        <h2>Hussen</h2>
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star-half'></i>
+        </div>
+        <p>kerenss bingits buat service dr owner dan drivernya yg very recommended buat low yg mo pke anugerah rental
+          dan semoga semakin sukses.</p>
+      </div>
+
+      <div class="box">
+        <div class="rev-img">
+          <img src="img/rev2.jpg" alt="">
+        </div>
+        <h2>Rezal</h2>
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star-half'></i>
+        </div>
+        <p>Ramah, bersih dan hapal tempat wisata serta memberikan alternatif/saran mana yg akan dikunjung makasih
+          Anugerah rental.</p>
+      </div>
+
+      <div class="box">
+        <div class="rev-img">
+          <img src="img/rev3.jpg" alt="">
+        </div>
+        <h2>Eko</h2>
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star-half'></i>
+        </div>
+        <p>Adminnya, drivernya, ketepatan waktunya, semua servisnya baik.Harga terjangkau dan terjamin. Makasih
+          Akan pakai Anugerah rental lagi kedepannya.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact" id="contact">
+    <div class="heading">
+      <span>Contact</span>
+      <h1>Hubungi Kami</h1>
+    </div>
+    <div class="container">
+      <form action="">
+        <div class="user-details">
+          <div class="input-box">
+            <span>Nama Lengkap</span>
+            <input type="text" name="nama" id="nama" required>
+          </div>
+          <div class="input-box">
+            <span>Email</span>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="input-box">
+            <span>Pesan</span>
+            <textarea name="pesan" id="pesan" rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" name="submit" value="Kirim">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Langganan-->
+  <section class="newsletter">
+    <h2>Berlangganan Youtube Anugerah</h2>
+    <div class="box">
+      <input type="text" placeholder="Enter Your email...">
+      <a href="https://www.youtube.com/@uun1237" class="btn">Subscribe</a>
+    </div>
+  </section>
+  <div class="copyright">
+    <p>&#169; TR Team 11 IMK D</p>
+    <a href="https://www.facebook.com/anugerahrentalsalatiga"><i class='bx bxl-facebook'></i></a>
+    <a href="https://www.twitter.com/anugerahrentalsalatiga"><i class='bx bxl-twitter'></i></a>
+    <a href="https://www.instagram.com/anugerahrentalsalatiga"><i class='bx bxl-instagram'></i></a>
+  </div>
+
+  <!--link to js-->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    /*!
+   * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+   * Copyright 2011-2024 The Bootstrap Authors
+   * Licensed under the Creative Commons Attribution 3.0 Unported License.
+   */
+
+    (() => {
+      'use strict';
+
+      const getStoredTheme = () => localStorage.getItem('theme');
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme) {
+          return storedTheme;
+        }
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      setTheme(getPreferredTheme());
+
+      const showActiveTheme = (theme, focus = false) => {
+        const themeSwitcher = document.querySelector('#bd-theme');
+
+        if (!themeSwitcher) {
+          return;
+        }
+
+        const themeSwitcherText = document.querySelector('#bd-theme-text');
+        const activeThemeIcon = document.querySelector('.theme-icon-active');
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        const iconOfActiveBtn = btnToActive.querySelector('i use').dataset.themeIcon;
+
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.classList.remove('active');
+          element.setAttribute('aria-pressed', 'false');
+        });
+
+        btnToActive.classList.add('active');
+        btnToActive.setAttribute('aria-pressed', 'true');
+        activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
+        activeThemeIcon.classList.add(iconOfActiveBtn);
+        activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+        const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+        themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
+
+        if (focus) {
+          themeSwitcher.focus();
+        }
+      };
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme());
+        }
+      });
+
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme());
+
+        document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+          toggle.addEventListener('click', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setStoredTheme(theme);
+            setTheme(theme);
+            showActiveTheme(theme, true);
+          });
+        });
+      });
+    })();
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelajari lanjut</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- box icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #474fa0;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #3c83f6;
+    }
+  </style>
+</head>
+
+<!-- Pelajari lebih lanjut-->
+
+<body>
+  <li class="nav-item dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+        <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="light">
+          <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi bi-sun-fill"></i>
+          Light
+        </button>
+      </li>
+      <li>
+        <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="dark">
+          <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi bi-moon-fill"></i>
+          Dark
+        </button>
+      </li>
+      <li>
+        <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="auto">
+          <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi bi-circle-half"></i>
+          Auto
+        </button>
+      </li>
+    </ul>
+  </li>
+  <h1>Kebijakan & Pelanggaran</h1>
+
+  <h2>Kebijakan Sewa</h2>
+  <p>Di Rental Anugerah, kami memiliki kebijakan sewa yang harus diikuti oleh pelanggan kami. Beberapa poin penting
+    dalam kebijakan sewa kami meliputi:</p>
+  <ul>
+    <li>Pelanggan harus menyewa kendaraan dengan membawa SIM yang masih berlaku sesuai dengan jenis kendaraan yang akan
+      disewa.</li>
+    <li>Pelanggan harus memberikan jaminan berupa KTP atau identitas resmi lainnya saat melakukan penyewaan kendaraan.
+    </li>
+    <li>Pembayaran sewa harus dilakukan sebelum mengambil kendaraan yang disewa.</li>
+    <li>Pelanggan diharapkan mengembalikan kendaraan tepat waktu sesuai dengan kesepakatan sewa.</li>
+    <li>Pelanggan bertanggung jawab atas kerusakan atau kehilangan yang terjadi pada kendaraan selama masa sewa.</li>
+  </ul>
+
+  <h2>Pelanggaran Sewa</h2>
+  <p>Kami menganggap serius pelanggaran terhadap kebijakan sewa kami. Beberapa pelanggaran sewa yang dapat menyebabkan
+    sanksi adalah:</p>
+  <ul>
+    <li>Menggunakan kendaraan untuk tujuan yang melanggar hukum atau tidak sah.</li>
+    <li>Melebihi batas waktu pengembalian kendaraan tanpa pemberitahuan atau persetujuan sebelumnya.</li>
+    <li>Menggunakan kendaraan dengan SIM yang sudah tidak berlaku atau tanpa memiliki SIM.</li>
+    <li>Mengembalikan kendaraan dalam kondisi rusak atau kotor yang melebihi batas wajar.</li>
+    <li>Melakukan tindakan yang merugikan atau merusak kendaraan yang disewa.</li>
+  </ul>
+
+  <p>Jika pelanggan melanggar kebijakan sewa kami, Rental Anugerah berhak memberlakukan sanksi yang dapat mencakup
+    denda, pembatalan sewa, atau larangan menyewa di masa mendatang.</p>
+
+  <a href="index.html" class="back-button">Kembali ke Beranda</a>
+</body>
+<!--link to js-->
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+  /*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ */
+
+  (() => {
+    'use strict';
+
+    const getStoredTheme = () => localStorage.getItem('theme');
+    const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+    const getPreferredTheme = () => {
+      const storedTheme = getStoredTheme();
+      if (storedTheme) {
+        return storedTheme;
+      }
+
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+
+    const setTheme = theme => {
+      if (theme === 'auto') {
+        document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      } else {
+        document.documentElement.setAttribute('data-bs-theme', theme);
+      }
+    };
+
+    setTheme(getPreferredTheme());
+
+    const showActiveTheme = (theme, focus = false) => {
+      const themeSwitcher = document.querySelector('#bd-theme');
+
+      if (!themeSwitcher) {
+        return;
+      }
+
+      const themeSwitcherText = document.querySelector('#bd-theme-text');
+      const activeThemeIcon = document.querySelector('.theme-icon-active');
+      const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+      const iconOfActiveBtn = btnToActive.querySelector('i use').dataset.themeIcon;
+
+      document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+        element.classList.remove('active');
+        element.setAttribute('aria-pressed', 'false');
+      });
+
+      btnToActive.classList.add('active');
+      btnToActive.setAttribute('aria-pressed', 'true');
+      activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
+      activeThemeIcon.classList.add(iconOfActiveBtn);
+      activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+      const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+      themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
+
+      if (focus) {
+        themeSwitcher.focus();
+      }
+    };
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      const storedTheme = getStoredTheme();
+      if (storedTheme !== 'light' && storedTheme !== 'dark') {
+        setTheme(getPreferredTheme());
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      showActiveTheme(getPreferredTheme());
+
+      document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value');
+          setStoredTheme(theme);
+          setTheme(theme);
+          showActiveTheme(theme, true);
+        });
+      });
+    });
+  })();
+
+</script>
+
+
+</html>
